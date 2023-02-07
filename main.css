@@ -120,7 +120,7 @@
 }
 
 .corpo1 button{
-    background-color: #CCBCB9;
+    background-color: #76763A;
     padding: 2rem 5rem 2rem 5rem;
     border-radius: 7px;
     color: #fff;
@@ -129,8 +129,9 @@
     transition: 0.5s;
 }
 .corpo1 button:hover{
-    background-color: gray;
+    background-color: #CCBCB9;
     transform: scaleY(0.9) translateY(5px);
+    color: #000;
 }
 
 /* Section 2 */
@@ -195,8 +196,8 @@
     margin-bottom: 7rem; 
     line-height: 1.2;   
 }
-.text-cta a{
-    background-color: gray;
+.text-cta button{
+    background-color: #76763A;
     padding: 2rem 5rem 2rem 5rem;
     border-radius: 7px;
     color: #fff;
@@ -204,9 +205,10 @@
     cursor: pointer;
     transition: 0.5s;
 }
-.text-cta a:hover{
+.text-cta button:hover{
     background-color: #CCBCB9;
     transform: scaleY(0.9) translateY(5px);
+    color: #000;
 }
 
 
@@ -268,6 +270,7 @@
     border: #fff 5px solid;
     text-transform: uppercase;
     font-size: 2rem;
+    
 }
 
 /* Footer */

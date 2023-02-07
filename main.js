@@ -44,7 +44,7 @@ var options = {
   const image = document.querySelector("#img1");
 
   image.addEventListener("mouseover", function() {
-    this.src='./IMG/gost1.png'
+    Element.src='./IMG/gost1.png'
   });
 
   
