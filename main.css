@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
 /* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
   border: none;
@@ -89,31 +89,23 @@
 }
 
 /* Section 1 */
-.background {
-  background-image: url(IMG/loja1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  color: #000;
+.section1 {
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 3rem;
 }
-
+.section1 img {
+  width: 700px;
+}
 .corpo1 {
-  line-height: 2;
-  font-weight: bold;
-  font-size: 1rem;
-  padding-top: 17rem;
-  align-items: center;
-  text-align: center;
-  color: #fff;
+  margin-left: 4rem;
 }
-
 .corpo1 h1 {
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
-
 .corpo1 button {
+  margin-top: 5rem;
   background-color: #76763a;
   padding: 2rem 5rem 2rem 5rem;
   border-radius: 7px;
@@ -127,7 +119,6 @@
   transform: scaleY(0.9) translateY(5px);
   color: #000;
 }
-
 /* Section 2 */
 .text-roupa {
   margin-top: 7rem;
@@ -166,28 +157,30 @@
 .cta {
   background-image: url(IMG/longa.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 90%;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   margin-top: 5rem;
 }
+
 .text-cta {
   color: #fff;
-  padding-left: 5rem;
+  padding-left: 7rem;
+  padding-top: 8rem;
 }
 .text-cta h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 6px;
   margin-bottom: 14px;
 }
 .text-cta h4 {
-  font-size: 3.3rem;
-  margin-bottom: 7rem;
-  line-height: 1.2;
+  font-size: 1.5rem;
 }
 .text-cta button {
+  margin-top: 2rem;
   background-color: #76763a;
   padding: 2rem 5rem 2rem 5rem;
   border-radius: 7px;
@@ -212,7 +205,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 2rem;
+  padding-top: 1rem;
   gap: 2rem;
   font-weight: bold;
   cursor: pointer;
@@ -223,10 +216,11 @@
   background-image: url(./IMG/card.png);
   width: 40%;
   height: 100vh;
-  padding-top: 5rem;
+  padding-top: 25rem;
   transition: 0.35s ease;
   color: #fff;
-  align-items: center;
+  text-align: left;
+  padding-left: 1rem;
 }
 .card1 h3 {
   font-size: 3rem;
@@ -238,13 +232,15 @@
 }
 
 .card2 {
-  padding-top: 5rem;
+  padding-top: 25rem;
   line-height: 1.5;
   background-image: url(./IMG/surf1.jpg);
   width: 40%;
   height: 100vh;
   color: #fff;
   transition: 0.35s ease;
+  text-align: left;
+  padding-left: 1rem;
 }
 .card2 h3 {
   font-size: 3rem;
@@ -342,9 +338,9 @@ footer a:hover {
   }
 
   .menu2 a:hover {
-    color: #ccbcb9;
+    color: #76763a;
     cursor: pointer;
-    border-bottom: 5px solid #ccbcb9;
+    border-bottom: 5px solid #76763a;
     text-transform: uppercase;
   }
 
@@ -354,6 +350,36 @@ footer a:hover {
 
   .menuresponsivo {
     display: block;
+  }
+
+  /* Section 1 */
+  .background {
+    background-image: url(IMG/loja1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .section1 {
+    margin-top: 1rem;
+  }
+  .section1 img {
+    display: none;
+  }
+  .corpo1 {
+    color: #fff;
+    margin: 0;
+    padding-top: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+  /* Section 3 */
+  .cta {
+    background-size: cover;
+  }
+  .text-cta {
+    margin-top: 5rem;
   }
 
   /* Section 4 */
@@ -366,11 +392,21 @@ footer a:hover {
     font-weight: bold;
   }
   .card1 p {
-    font-size: 5vh;
+    font-size: 3vh;
   }
   .card2 p {
-    font-size: 5vh;
+    font-size: 3vh;
   }
+  .card1 a {
+    font-size: 1rem;
+  }
+  .card2 a {
+    font-size: 1rem;
+  }
+  .card2 a {
+    line-height: 3.4;
+  }
+
   footer {
     padding: 2rem;
   }

@@ -1,6 +1,15 @@
+const IMAGE_PATHS = {
+  image: ["./IMG/gost1.png", "./IMG/foto1.png"],
+  image2: ["./IMG/gost2.png", "./IMG/foto2.png"],
+  image3: ["./IMG/gost3.png", "./IMG/foto3.png"],
+  image4: ["./IMG/gost4.png", "./IMG/foto4.png"],
+};
+
+const firstImage = 0;
+const secondImage = 1;
+
 var elem = document.querySelector(".main-carousel");
 var flkty = new Flickity(elem, {
-  // options
   cellAlign: "left",
   contain: true,
   autoPlay: true,
@@ -8,13 +17,8 @@ var flkty = new Flickity(elem, {
   pageDots: false,
 });
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity(".main-carousel", {
-  // options
-});
+var flkty = new Flickity(".main-carousel", {});
 
-// Flickity options, defaults
 var options = {
   prevNextButtons: false,
 };
@@ -22,7 +26,7 @@ var options = {
 // Responsive Menu
 
 const showMenu = () => {
-  let menuMobile = document.querySelector(".menu2");
+  const menuMobile = document.querySelector(".menu2");
 
   if (menuMobile && menuMobile.classList.contains("open")) {
     menuMobile.classList.remove("open");
@@ -37,28 +41,28 @@ const userProfile = () => alert("Estamos em manutenção!");
 
 // Creating Rollover from the news tab
 
-const addEvents = (element, path1, path2) => {
+const addEvents = (element, path) => {
   if (element) {
     element.addEventListener("mouseover", function () {
-      this.src = path1;
+      this.src = IMAGE_PATHS[path][firstImage];
     });
 
     element.addEventListener("mouseout", function () {
-      this.src = path2;
+      this.src = IMAGE_PATHS[path][secondImage];
     });
   }
 };
 
 const image = document.querySelector("#img1");
 
-addEvents(image, "./IMG/gost1.png", "./IMG/foto1.png");
+addEvents(image, "image");
 
 const image2 = document.querySelector("#img2");
 
-addEvents(image2, "./IMG/gost2.png", "./IMG/foto2.png");
+addEvents(image2, "image2");
 
 const image3 = document.querySelector("#img3");
-addEvents(image3, "./IMG/gost3.png", "./IMG/foto3.png");
+addEvents(image3, "image3");
 
 const image4 = document.querySelector("#img4");
-addEvents(image4, "./IMG/gost4.png", "./IMG/foto4.png");
+addEvents(image4, "image4");
