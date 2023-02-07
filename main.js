@@ -23,7 +23,8 @@ var options = {
 
 showMenu = () => {
   let menuMobile = document.querySelector(".menu2");
-  if (menuMobile.classList.contains("open")) {
+
+  if (menuMobile && menuMobile.classList.contains("open")) {
     menuMobile.classList.remove("open");
   } else {
     menuMobile.classList.add("open");
