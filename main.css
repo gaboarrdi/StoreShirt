@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+/* HEADER */
+.header{
+    /* background: #76763A; */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px;
+    color: #000;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all .35s ease;
+    padding: 14px 5%;
+}
+.logo{
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.menu{
+    display: flex;
+    font-size: 18px;
+    gap: 3rem;
+    transition: 0.3s;
+}
+.menu2{
+    display: none;
+}
+
+.menu a{
+    color: #000;
+}
+.menu :hover{
+    color: #CCBCB9;
+    cursor: pointer;
+    border-bottom : 5px solid #CCBCB9;
+    text-transform: uppercase;
+}
+
+.portal{
+    display: flex;
+  font-size: 3vh;
+  cursor: pointer;
+  gap: 1rem;
+
+}
+
+/* CARROSEL */
+.flickity-page-dots {
+    bottom: -22px;
+  }
+
+  .flickity-page-dots .dot {
+    height: 10px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
+  }
+.main-carousel{
+    margin: 0;
+    padding-top: 4.3rem;
+    padding-bottom: 1.3rem;
+}
+.carousel-cell{
+    display: inline-flex;
+    width: 100%;
+}
+
+
+.carousel-cell img{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+
+/* Section 1 */
+.background{
+    background-image: url(IMG/loja1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    max-width: 100%;
+    height: 100vh;
+    color: #000;
+    
+}
+
+
+.corpo1{
+    line-height: 2;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 17rem;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.corpo1 h1{
+    font-size: 4rem;
+}
+
+.corpo1 button{
+    background-color: #CCBCB9;
+    padding: 2rem 5rem 2rem 5rem;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.corpo1 button:hover{
+    background-color: gray;
+    transform: scaleY(0.9) translateY(5px);
+}
+
+/* Section 2 */
+.text-roupa{
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 1.7;
+    
+}
+.container-roupa{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.container-roupa img:hover{
+    transform: scale(1.07) translateY(3px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.roupa img{
+    width: 350px;
+    height: 100%;
+
+}
+
+.roupa{
+    background-color: #76763A;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* Section 3 */
+
+.cta{
+    background-image: url(IMG/longa.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    
+}
+.text-cta{
+    color: #fff;
+    padding-left: 5rem;
+}
+.text-cta h2{
+    font-size: 2rem;
+    letter-spacing: 6px;
+    margin-bottom: 14px;
+}
+.text-cta h4{
+    font-size: 3.3rem;
+    margin-bottom: 7rem; 
+    line-height: 1.2;   
+}
+.text-cta a{
+    background-color: gray;
+    padding: 2rem 5rem 2rem 5rem;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.text-cta a:hover{
+    background-color: #CCBCB9;
+    transform: scaleY(0.9) translateY(5px);
+}
+
+
+/* Section 4 */
+.container-card-1{
+    align-items: center;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    gap: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.card1{
+    line-height: 2.5;
+    background-image: url(./IMG/card.png);
+    width: 40%;
+    height: 100vh;
+    padding-top: 5rem;
+    transition: 0.35s ease;
+    color: #fff;
+}
+.card1 h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card1:hover{
+    transform: scale(0.9);
+}
+
+.card2{
+    padding-top: 5rem;
+    line-height: 2.5;
+    background-image: url(./IMG/surf1.jpg);
+    width: 40%;
+    height: 100vh;
+    color: #fff;
+    transition: 0.35s ease;
+}
+.card2 h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card2:hover{
+    transform: scale(0.9);
+}
+
+.container-card-1 a{
+    color: #fff;
+    border: #fff 5px solid;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer{
+    columns: 2;
+    line-height: 3;
+    color: #fff;
+    display:block;
+    gap: 10rem;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 3rem;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    
+}
+
+footer a{
+    font-size: 2vh;
+    color: #CCBCB9;
+    transition: 0.35s ease;
+}
+
+footer a:hover{
+    color: #76763A;
+}
+
+
+/* ------------------------------------------ */
+.menuresponsivo{
+    cursor: pointer;
+    font-size: 3vh;
+    display: none;
+}
+
+     
+@media(max-width: 999px) {
+   
+   /* Header responsivo */
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+       
+        align-items:center;
+        justify-content: space-around;
+        padding-top: 0;
+        margin: 0;
+        padding: 14px 5%;
+    }
+    .menu{
+        display: none;
+    }
+    .menu2{
+        display: flex;
+    font-size: 25px;
+    gap: 3rem;
+    transition: 0.3s;
+        position: absolute;
+        top: 8vh;
+        right: 8;
+       width: 30vw;
+       height: 20vh;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50vh;
+        background-color: #fff;
+        display: none;
+    }
+    .menu2 a{
+        color: #000;
+        gap: 1rem;
+    }
+    
+    .menu2 a:hover{
+        color: #CCBCB9;
+        cursor: pointer;
+        border-bottom : 5px solid #CCBCB9;
+        text-transform: uppercase; 
+    }
+    
+    
+    .open{
+        display: block;
+    }
+    
+    .menuresponsivo{
+        display: block;
+
+    }
+
+
+    /* Section 4 */
+    .card1 h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .card2 h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .card1 p {
+        font-size: 5vh;
+    }
+    .card2 p {
+        font-size: 5vh;
+    }
+    footer{
+        padding: 2rem;
+    }
+    footer h3{
+        font-size: 1rem;
+    }
+    footer a{
+        font-size: 12px;
+        align-items: center;
+    }
+
+}
+
+ 
