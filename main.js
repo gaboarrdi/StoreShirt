@@ -24,66 +24,66 @@ var options = {
   
 
 
-  // Menu responsivo
+  // Responsive Menu
 
-  mostrarMenu =() => {
+  showMenu = () => {
     let menuMobile = document.querySelector(".menu2");
     if (menuMobile.classList.contains("open")) {
-        menuMobile.classList.remove("open");
+      menuMobile.classList.remove("open");
     } else {
-        menuMobile.classList.add("open");
+      menuMobile.classList.add("open");
     }
   };
 
-  // Perfil
+  // UserProfile
 
-  perfil= () => alert("Estamos em manutenção!")
+  userProfile = () => alert("Estamos em manutenção!");
  
-  // Criando Rolover da aba novidades
+  // Creating Rollover from the news tab
 
-  const img = document.querySelector("#img1");
+  const image = document.querySelector("#img1");
 
-  img.addEventListener("mouseover", function() {
+  image.addEventListener("mouseover", function() {
     this.src='./IMG/gost1.png'
   });
 
-  const imge = document.querySelector("#img1");
+  
 
-  img.addEventListener("mouseout", function() {
+  image.addEventListener("mouseout", function() {
     this.src='./IMG/foto1.png'
   });
 
-  const img2 = document.querySelector("#img2");
-  img2.addEventListener("mouseover", function() {
+  const image2 = document.querySelector("#img2");
+
+  image2.addEventListener("mouseover", function() {
     this.src='./IMG/gost2.png'
   });
 
-  const imge2 = document.querySelector("#img2");
-  img2.addEventListener("mouseout", function() {
+  
+  image2.addEventListener("mouseout", function() {
     this.src='./IMG/foto2.png'
   });
 
-  const img3 = document.querySelector("#img3");
+  const image3 = document.querySelector("#img3");
 
-  img3.addEventListener("mouseover", function() {
+  image3.addEventListener("mouseover", function() {
     this.src='./IMG/gost3.png'
   });
 
-  const imge3 = document.querySelector("#img3");
+ 
 
-  img3.addEventListener("mouseout", function() {
+  image3.addEventListener("mouseout", function() {
     this.src='./IMG/foto3.png'
   });
 
-  const img4 = document.querySelector("#img4");
+  const image4 = document.querySelector("#img4");
 
-  img4.addEventListener("mouseover", function() {
+  image4.addEventListener("mouseover", function() {
     this.src='./IMG/gost4.png'
   });
 
-  const imge4 = document.querySelector("#img4");
-
-  img4.addEventListener("mouseout", function() {
+  
+  image4.addEventListener("mouseout", function() {
     this.src='./IMG/foto4.png'
   });
 
