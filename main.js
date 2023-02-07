@@ -37,48 +37,28 @@ const userProfile = () => alert("Estamos em manutenção!");
 
 // Creating Rollover from the news tab
 
+const addEvents = (element, path1, path2) => {
+  if (element) {
+    element.addEventListener("mouseover", function () {
+      this.src = path1;
+    });
+
+    element.addEventListener("mouseout", function () {
+      this.src = path2;
+    });
+  }
+};
+
 const image = document.querySelector("#img1");
 
-if (image) {
-  image.addEventListener("mouseover", function () {
-    this.src = "./IMG/gost1.png";
-  });
+addEvents(image, "./IMG/gost1.png", "./IMG/foto1.png");
 
-  image.addEventListener("mouseout", function () {
-    this.src = "./IMG/foto1.png";
-  });
-}
 const image2 = document.querySelector("#img2");
 
-if (image2) {
-  image2.addEventListener("mouseover", function () {
-    this.src = "./IMG/gost2.png";
-  });
-
-  image2.addEventListener("mouseout", function () {
-    this.src = "./IMG/foto2.png";
-  });
-}
+addEvents(image2, "./IMG/gost2.png", "./IMG/foto2.png");
 
 const image3 = document.querySelector("#img3");
+addEvents(image3, "./IMG/gost3.png", "./IMG/foto3.png");
 
-if (image3) {
-  image3.addEventListener("mouseover", function () {
-    this.src = "./IMG/gost3.png";
-  });
-
-  image3.addEventListener("mouseout", function () {
-    this.src = "./IMG/foto3.png";
-  });
-}
 const image4 = document.querySelector("#img4");
-
-if (image4) {
-  image4.addEventListener("mouseover", function () {
-    this.src = "./IMG/gost4.png";
-  });
-
-  image4.addEventListener("mouseout", function () {
-    this.src = "./IMG/foto4.png";
-  });
-}
+addEvents(image4, "./IMG/gost4.png", "./IMG/foto4.png");
