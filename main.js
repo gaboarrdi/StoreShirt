@@ -21,7 +21,7 @@ var options = {
 
 // Responsive Menu
 
-showMenu = () => {
+const showMenu = () => {
   let menuMobile = document.querySelector(".menu2");
 
   if (menuMobile && menuMobile.classList.contains("open")) {
@@ -33,46 +33,52 @@ showMenu = () => {
 
 // UserProfile
 
-userProfile = () => alert("Estamos em manutenção!");
+const userProfile = () => alert("Estamos em manutenção!");
 
 // Creating Rollover from the news tab
 
 const image = document.querySelector("#img1");
 
-image.addEventListener("mouseover", function () {
-  this.src = "./IMG/gost1.png";
-});
+if (image) {
+  image.addEventListener("mouseover", function () {
+    this.src = "./IMG/gost1.png";
+  });
 
-image.addEventListener("mouseout", function () {
-  this.src = "./IMG/foto1.png";
-});
-
+  image.addEventListener("mouseout", function () {
+    this.src = "./IMG/foto1.png";
+  });
+}
 const image2 = document.querySelector("#img2");
 
-image2.addEventListener("mouseover", function () {
-  this.src = "./IMG/gost2.png";
-});
+if (image2) {
+  image2.addEventListener("mouseover", function () {
+    this.src = "./IMG/gost2.png";
+  });
 
-image2.addEventListener("mouseout", function () {
-  this.src = "./IMG/foto2.png";
-});
+  image2.addEventListener("mouseout", function () {
+    this.src = "./IMG/foto2.png";
+  });
+}
 
 const image3 = document.querySelector("#img3");
 
-image3.addEventListener("mouseover", function () {
-  this.src = "./IMG/gost3.png";
-});
+if (image3) {
+  image3.addEventListener("mouseover", function () {
+    this.src = "./IMG/gost3.png";
+  });
 
-image3.addEventListener("mouseout", function () {
-  this.src = "./IMG/foto3.png";
-});
-
+  image3.addEventListener("mouseout", function () {
+    this.src = "./IMG/foto3.png";
+  });
+}
 const image4 = document.querySelector("#img4");
 
-image4.addEventListener("mouseover", function () {
-  this.src = "./IMG/gost4.png";
-});
+if (image4) {
+  image4.addEventListener("mouseover", function () {
+    this.src = "./IMG/gost4.png";
+  });
 
-image4.addEventListener("mouseout", function () {
-  this.src = "./IMG/foto4.png";
-});
+  image4.addEventListener("mouseout", function () {
+    this.src = "./IMG/foto4.png";
+  });
+}
