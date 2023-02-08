@@ -48,9 +48,9 @@
   color: #000;
 }
 .menu :hover {
-  color: #ccbcb9;
+  color: #76763a;
   cursor: pointer;
-  border-bottom: 5px solid #ccbcb9;
+  border-bottom: 5px solid #76763a;
   text-transform: uppercase;
 }
 
@@ -155,7 +155,7 @@
 /* Section 3 */
 
 .cta {
-  background-image: url(img/longa.jpg);
+  background-image: url(../img/longa.jpg);
   background-position: center;
   background-size: 90%;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@
 
 .card1 {
   line-height: 1.5;
-  background-image: url(./img/card.png);
+  background-image: url(../img/card.png);
   width: 40%;
   height: 100vh;
   padding-top: 25rem;
@@ -234,7 +234,7 @@
 .card2 {
   padding-top: 25rem;
   line-height: 1.5;
-  background-image: url(./img/surf1.jpg);
+  background-image: url(../img/surf1.jpg);
   width: 40%;
   height: 100vh;
   color: #fff;
@@ -354,7 +354,7 @@ footer a:hover {
 
   /* Section 1 */
   .background {
-    background-image: url(img/loja1.png);
+    background-image: url(../img/loja1.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
