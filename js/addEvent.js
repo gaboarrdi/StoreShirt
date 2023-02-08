@@ -1,8 +1,9 @@
 const IMAGE_PATHS = {
-  image: ['./img/gost1.png', './img/foto1.png'],
-  image2: ['./img/gost2.png', './img/foto2.png'],
-  image3: ['./img/gost3.png', './img/foto3.png'],
-  image4: ['./img/gost4.png', './img/foto4.png'],
+  image: ['./IMG/gost1.png', './IMG/foto1.png'],
+  image: ['./IMG/gost1.png', './IMG/foto1.png'],
+  image2: ['./IMG/gost2.png', './IMG/foto2.png'],
+  image3: ['./IMG/gost3.png', './IMG/foto3.png'],
+  image4: ['./IMG/gost4.png', './IMG/foto4.png'],
 };
 
 const firstImage = 0;
