@@ -20,5 +20,5 @@ Após a realização do projeto, vendo como tudo estava, decidi aproveitar a opo
 
 <h1> Imagens do Projeto <h1>
 
-<img src="./img/ProjetoTelaCheia.png"> <br>
+<img src="./IMG/ProjetoTelaCheia.png"> <br>
 <img src="./img/ProjetoResponsivo.png">
