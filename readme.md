@@ -10,10 +10,15 @@ Após a realização do projeto, vendo como tudo estava, decidi aproveitar a opo
 2º - Teste Unitário = este teste me ajudou a verificar o comportamento do meu código, veridicando nele a existência ou não de qualquer erro presente. Deixando assim  mais fácil de ter certeza que não existem bugs dentro das linhas de codificadas.</p>
 
 <h1>Para rodar o teste unitário:</h1>
-1ª "npm install";
+1ª "npm install"; <br>
 2º "npm run test";
 
 <h1> Para rodar o projeto: </h1>
 
-1º Fazer o download do mesmo dentro de seu repositório no GitHub;
+1º Fazer o download do mesmo dentro de seu repositório no GitHub; <br>
 2º Inicia-lo com o live server.
+
+<h1> Imagens do Projeto <h1>
+
+<img src="./img/ProjetoTelaCheia.png" alt=""> <br>
+<img src="./img/ProjetoResponsivo.png" alt="" srcset="">
